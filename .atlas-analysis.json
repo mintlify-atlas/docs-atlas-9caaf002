@@ -1,0 +1,101 @@
+{
+  "projectType": "frontend",
+  "projectName": "GameHub",
+  "projectDescription": "A Vue.js frontend application for videogame administration with user management, game library, and subscription features",
+  "theme": "almond",
+  "primaryColor": "#8727fc",
+  "lightColor": "#8c51fc",
+  "darkColor": "#0c040c",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/authentication",
+              "features/game-management",
+              "features/user-management",
+              "features/library-system",
+              "features/subscriptions"
+            ]
+          },
+          {
+            "group": "Components",
+            "pages": [
+              "components/overview",
+              "components/auth-components",
+              "components/game-components",
+              "components/user-components",
+              "components/layout-components"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/project-structure",
+              "architecture/routing",
+              "architecture/state-management",
+              "architecture/api-services"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Services",
+            "pages": [
+              "api/auth-service",
+              "api/game-service",
+              "api/library-service",
+              "api/user-service",
+              "api/subscription-service"
+            ]
+          },
+          {
+            "group": "Store",
+            "pages": [
+              "api/auth-store",
+              "api/app-store"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "User authentication with login and registration",
+    "Videogame CRUD operations for admin users",
+    "User library management with purchase and subscription options",
+    "Role-based access control (admin/user)",
+    "Subscription assignment and management",
+    "Game browsing and filtering",
+    "Vuetify-based Material Design UI"
+  ],
+  "publicApiSurface": [
+    "Game.addGame(data)",
+    "Game.editGame({id, data})",
+    "Game.deleteGame(id)",
+    "Game.getGames()",
+    "Library.addLibrary(data)",
+    "Library.getLibrary()",
+    "User.getUsers()",
+    "Subs.getSubs()",
+    "Subs.asignSub(data)",
+    "Subs.deleteSub(data)",
+    "useAuthStore.fetchUser()",
+    "useAuthStore.logout()",
+    "useAuthStore.setUser(user)"
+  ]
+}
